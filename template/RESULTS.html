@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HOME</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='./CSS/Home.css') }}">
+</head>
+<body>
+    <div class="all">
+        <div class="window">
+            <div class="div1">
+                <img src="{{url_for('static', filename='./IMG/logo2_alpha.png')}}" class="imgs">
+            </div>
+            <div class="div2">
+                <div class="title section">Your data</div>
+                <div class="container black">
+                    <div class="elenco">
+                        <div>Insert data (UPLOAD CSV)</div>
+                        <button class="options">UPLOAD</button>
+                        <div>Other informations</div>
+                        <input placeholder="Insert here"></input>
+                        <div class="center">
+                            <button class="options center">CALCULATE PREMIUM</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="div3">
+                <div class="title section">Output data</div>
+                    <div class="container black">
+                        <div class="elenco">
+                            <div class="field imp">PREMIUM</div>
+                            <div class="response center grosso">1237 €</div>
+                            <div class="field imp">REWARDS (maximum)</div>
+                            <div class="form">
+                                <div class="field">Collisions with other Vehicles</div>
+                                <div class="response medium">100.000 €</div>
+                            </div>
+                            <div class="form">
+                                <div class="field">Damage to public property</div>
+                                <div class="response medium">500.000 €</div>
+                            </div>
+                            <div class="form">
+                                <div class="field">Damage to private property</div>
+                                <div class="response medium">500.000 €</div>
+                            </div>
+                            <div class="form">
+                                <div class="field">Fire and theft</div>
+                                <div class="response under">20.000 €</div>
+                            </div>
+                            <div class="form">
+                                <div class="field">Weather Related Damage</div>
+                                <div class="response over">80.000 €</div>
+                            </div>
+                            <div class="field imp">MOTIVATION</div>
+                            <div class="response form">
+                                The parameter related to the place of residence has reduced the rewards about "Fire and theft" field.<br>
+                            </div>
+                            <div class="response form">
+                                The parameter related to the vehicle's resistance to weather events has increased the rewards about "Weather Related Damage" field.<br>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+ </body>
+</html>

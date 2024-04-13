@@ -1,0 +1,252 @@
+*,  body {
+    margin: 0;
+    padding: 0;
+      -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; 
+
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+   background: linear-gradient(to bottom right, #4d7fff 0%, #1a56ff 100%);
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-track:horizontal {
+  background-color: white;
+  box-shadow: inset 0 0 2px 2px gainsboro;
+}
+
+
+:root { 
+    --space-cadet: #252754ff;
+    --white: #FFFFFFff;
+    --ultra-violet: #565673ff;
+    --celestial-blue: #54A0D7ff;
+    --azul: #0970B7ff;
+}
+
+html, body {
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+}
+
+
+.all {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.window {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+video {
+    width: 400px;
+}
+
+.section {
+    justify-content: flex-start !important;
+}
+
+.toolbar {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 50px;
+    background-color: #16679C;
+}
+
+.options {
+  align-items: center;
+  appearance: button;
+  background-color: #0144AC;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-size: 100%;
+  line-height: 1.15;
+  height: calc(100% - 10px);
+  margin: 0;
+  padding: 5px 21px;
+  text-align: center;
+  text-transform: none;
+  transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  height: 80px;
+}
+
+.options:active {
+  background-color: #006AE8;
+}
+
+.options:hover {
+  background-color: #1C84FF;
+}
+
+
+.window {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    background-color: #1A202C;
+}
+
+.div1 { 
+    grid-area: 1 / 1 / 3 / 11;
+    border: 1px black solid;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.div2 {
+    grid-area: 3 / 1 / 11 / 6;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border: 1px black solid;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.div3 { 
+    grid-area: 3 / 6 / 11 / 11;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border: 1px black solid;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
+}
+
+
+
+.container {
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    position: relative;
+    width: 60%;
+    background-color: #23314d;
+    color: white;
+    gap: 20px;
+    height: 100%;
+    width: calc(100% - 20px);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 5px 0;
+    height: 40px;   
+    width: 100%;
+    font-size: 35px;
+    padding: 10px;
+    color: white;
+} 
+
+.black {
+    color: black !important;
+}
+
+
+.elenco {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 22px;
+    color: white;
+}
+
+
+input {
+    height: 20px;
+}
+
+.imgs {
+    aspect-ratio: 1647/422;
+    height: calc(100% - 20px);
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    height: 50px;
+    font-size: 17px;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form {
+    font-size: 15px;
+}
+
+.imp {
+    font-size: 25px;
+}
+
+.grosso {
+    font-size: 30px;
+}
+
+
+.over {
+    color: green;
+}
+
+.medium {
+    color: yellow;
+}
+
+.under {
+    color: red;
+}
+
+
+.center {
+    z-index: 100;
+}

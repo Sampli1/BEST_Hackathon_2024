@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>HOME</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='./CSS/Home.css') }}">
+</head>
+<body>
+    <div class="all">
+        <div class="window">
+            <div class="div1">
+                <img src="{{url_for('static', filename='./IMG/logo2_alpha.png')}}" class="imgs">
+            </div>
+            <div class="div2">
+                <div class="title section">Your data</div>
+                <div class="container black">        
+                    <div class="elenco">
+                        <div>Insert data (UPLOAD CSV)</div>
+                        <button class="options">UPLOAD</button>
+                        <div>Other informations</div>
+                        <input placeholder="Insert here"></input>
+                        <div class="center">
+                            <button class="options center" onclick="window.location.href = '/OUT';">CALCULATE PREMIUM</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="div3">
+                <div class="title section">Output data</div>
+            </div>
+        </div>
+    </div>
+ </body>
+</html>
