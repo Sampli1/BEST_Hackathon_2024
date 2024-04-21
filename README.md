@@ -1,4 +1,4 @@
-# BEST_Hackathon
+# BEST_Hackathon 2024
 ## Funzionamento
 
 ```
